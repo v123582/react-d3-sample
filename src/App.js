@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import BarChart from './components/BarChart'
+import BubbleChart from './components/BubbleChart'
+import MapChart from './components/MapChart'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <h1>Hello World</h1>
+        <BarChart />
+        <BubbleChart />
+        <MapChart />
       </div>
     );
   }
 }
 
 export default App;
+
+// https://blog.logrocket.com/data-visualization-in-react-using-react-d3-c35835af16d0
+// https://frontendcharts.com/react-d3-integrate/
+// https://medium.com/@zimrick/how-to-create-pure-react-svg-maps-with-topojson-and-d3-geo-e4a6b6848a98
