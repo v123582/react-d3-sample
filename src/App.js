@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import BarChart from './components/BarChart'
 import BubbleChart from './components/BubbleChart'
 import MapChart from './components/MapChart'
+import NewChart from './components/NewChart'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <BarChart />
         <BubbleChart />
         <MapChart />
+        <NewChart />
       </div>
     );
   }
